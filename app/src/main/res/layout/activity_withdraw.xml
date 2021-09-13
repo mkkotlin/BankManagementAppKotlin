@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Withdraw"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/AccountNum"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Account Number"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/InputAccNum"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/AccountNum"
+        android:inputType="number"
+        android:maxLength="16"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/AccountNum"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ffffff"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Next"
+        android:textColor="#000000"
+        android:outlineProvider="bounds"/>
+
+    <TextView
+        android:id="@+id/NetAmount"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Next"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:text="\nBalance"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Balance"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Next"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/NetAmount" />
+
+    <TextView
+        android:id="@+id/WithdrawAmount"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/NetAmount"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="\nAmount"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/WithdrawInput"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/NetAmount"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/NetAmount"
+        android:maxLines="1"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/WithdrawMoney"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/WithdrawAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#EFA998"
+        android:text="Withdraw"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="message"
+        android:textAlignment="center" />
+
+</RelativeLayout>

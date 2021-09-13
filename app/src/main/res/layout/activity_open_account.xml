@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/LabelName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Name"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/InputName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/LabelName"
+        android:inputType="textPersonName|textCapWords|textAutoComplete|textAutoCorrect"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/LabelDOB"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelName"
+        android:text="DOB"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/InputDOB"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/InputName"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/LabelName"
+        android:backgroundTint="@color/white"
+        android:text="Choose Date(dd/mm/yyyy)"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/LabelPhone"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Phone"
+        android:textSize="25dp"
+        android:layout_below="@+id/LabelDOB"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/InputPhone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelDOB"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/LabelName"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/LabelType"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelPhone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Acc Type"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/InputType"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelPhone"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/LabelName"
+        android:inputType="textAutoCorrect|textPersonName"
+        android:maxLines="1"
+        android:maxLength="7"/>
+
+    <TextView
+        android:id="@+id/LabelAccNum"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelType"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Acc Num:"
+        android:textSize="25dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/InputAccNum"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelType"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/LabelName"
+        android:maxLines="1"
+        android:text="#@^^^^6#bhgyo"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/LabelAmount"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Amount"
+        android:textSize="25dp"
+        android:layout_below="@+id/LabelAccNum"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/InputAmount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LabelAccNum"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/LabelName"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/CreateAccount"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F1B5D0"
+        android:text="Create"/>
+
+</RelativeLayout>

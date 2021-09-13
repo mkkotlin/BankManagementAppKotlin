@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Record"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/AccNumField"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="AccountNumber"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/NameField"
+        android:layout_toEndOf="@+id/AccNumField"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/DOBField"
+        android:layout_toEndOf="@+id/NameField"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="dob"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/PhoneField"
+        android:layout_toEndOf="@+id/DOBField"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/AccTypField"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/PhoneField"
+        android:text="AccountTyp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AmountField"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/AccTypField"
+        android:text="Amount"
+        android:textSize="15sp" />
+
+<!--    separator-->
+
+    <TextView
+        android:id="@+id/AccNumFieldDis"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccNumField"
+        android:layout_marginLeft="10dp"
+        android:text="AccountNum"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/NameFieldDis"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccNumField"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/AccNumField"
+        android:text="Name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/DOBFieldDis"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccNumField"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/NameField"
+        android:text="dob"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PhoneFieldDis"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccNumField"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/DOBField"
+        android:text="Phone"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AccTypFieldDis"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccNumField"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/PhoneField"
+        android:text="AccountTyp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AmountFieldDis"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccNumField"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/AccTypField"
+        android:text="Amount"
+        android:textSize="15sp" />
+</RelativeLayout>
